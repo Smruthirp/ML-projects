@@ -1,0 +1,103 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered","what do you do", "who are you?"],
+         "responses": ["I am a covid-19 information bot. I can help you with the information related to covid-19 in india.", "Offering help with covid-19 information."],
+         "context": [""]
+        },
+        {"tag": "adverse_drug",
+         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+         "responses": ["Navigating to Adverse drug reaction module"],
+         "context": [""]
+        },
+        {"tag": "blood_pressure",
+         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
+         "responses": ["Navigating to Blood Pressure module"],
+         "context": [""]
+        },
+        {"tag": "blood_pressure_search",
+         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+         "responses": ["Please provide Patient ID", "Patient ID?"],
+         "context": ["search_blood_pressure_by_patient_id"]
+        },
+        {"tag": "search_blood_pressure_by_patient_id",
+         "patterns": [],
+         "responses": ["Loading Blood pressure result for Patient"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        },
+	{"tag":"Quarantine_visits",
+	"patterns":["Can my friends visit me?", "Can someone come see me during quarantine?","Is anyone allowed to visit during quarantine?","What is a safe distance when someone brings me groceries?","Are quarantined visits allowed?","Can I receive visits during quarantine?"],
+	"responses":["No,quarantine visits are not allowed","People in quarantine should stay home and separate themselves from others"],
+	"context":[]
+	},
+	{"tag": "",
+         "patterns": [],
+         "responses": [""],
+         "context": [""]
+        },
+	{"tag": "COVID_Description",
+         "patterns": ["What'is Corona Virus","covid what is it","What is covid","what is covid-19","What does covid stand for?","Is covid a disease?","where did covid come from?",
+	"I heard about covid what is it?","origin of coronavirus","does the virus spread thru surfaces","how does the virus spread","Where did the coronavirus come from?","what is the coronavirus?","what is novel coronavirus?","What is COVID-19?","How dangerous is this?","Has the cause of COVID-19 been identified?","How is COVID-19 spread?",
+	"What is corona virus","What is Corona virus?","what is the Corona Virus","what is the corona virus?","where did corona virus start from?","what is covid19","What is COVID?"],
+         "responses": ["COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.  WHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of viral pneumonia in Wuhan,China.Visit WHO to find more information.",
+	"COVID-19 COrona VIrus Disease, 19 stands for the year when the first case was identified"],
+         "context": [""]
+        },
+	{"tag": "more_info",
+         "patterns": ["Where can I learn more about covid?","Where can I find more information about covid 19?","2019-nCoV"],
+         "responses": ["Visit WHO to find more information."],
+         "context": [""]
+        },
+	{"tag": "Outside_Activities",
+         "patterns": ["are the local parks open?","am I safe outside?","What parks are open?","can i go to park","Can I go to the gym or should I avoid it?","is it dangerous to go outside?",
+	"Will the parks and bike trails remain open?","can i go outside?","can i go outside","when can I go outside?","is it safe to go outside?",
+	"What city parks are open?","Can I go for a run outside?","Are the national parks closed?"],
+	"responses": ["In general, the more closely you interact with others and the longer that interaction, the higher the risk of COVID-19 spread.","If you decide to engage in public activities, continue to protect yourself by practicing everyday preventive actions.","Keep these items on hand when venturing out: a mask, tissues, and a hand sanitizer with at least 60% alcohol, if possible."],
+         "context": [""]
+        }
+   ]
+}
